@@ -2,12 +2,14 @@ package pdfComparison;
 
 import java.io.IOException;
 
+import org.testng.annotations.Test;
+
 import de.redsix.pdfcompare.PdfComparator;
 
-public class pdfTest1 {	
+public class pdfTest {	
 	
-	public static void main(String[] args) throws Exception {
-		
+		@Test
+		public void pdfDemoTest() throws IOException {
 		String projectPath = System.getProperty("user.dir");
 		System.out.println(projectPath);
 		
@@ -15,7 +17,6 @@ public class pdfTest1 {
 		String file2 = projectPath + "\\testData\\file2.pdf";
 		String resultFile = projectPath + "\\results\\result";
 		String ignoreFile = projectPath + "\\ignore.conf";
-		
 		new PdfComparator(file1, file2).withIgnore(ignoreFile).compare().writeTo(resultFile);
 		//new PdfComparator("expected.pdf", "actual.pdf").compare().writeTo("diffOutput.pdf");
 		
