@@ -10,7 +10,7 @@ import dataDriven.ExcelDataDriven;
 
 public class TestSample {
 
-	private static final Logger logger = LogManager.getLogger(TestSample.class);
+	private static final Logger logger = LogManager.getLogger(TestSample.class.getName());
 	public static void main(String[] args) throws IOException {
 
 

@@ -11,6 +11,14 @@
 		<profile>
 			<id>Regression</id>
 			<build>
+
+				<!-- <resources>
+					<resource>
+						<directory>src/main/resources</directory>
+						<filtering>true</filtering>
+					</resource>
+				</resources> -->
+
 				<plugins>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
@@ -57,6 +65,7 @@
 			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> <maven.test.skip>true</maven.test.skip> 
 			</properties> -->
 
+
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -70,6 +79,16 @@
 			<type>maven-plugin</type>
 		</dependency>
 
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.11.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.11.2</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.testng</groupId>

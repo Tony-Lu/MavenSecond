@@ -2,12 +2,16 @@ package pdfComparison;
 
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
 import de.redsix.pdfcompare.PdfComparator;
+import test.TestSample;
 
 public class pdfTest {	
 	
+	private static final Logger logger = LogManager.getLogger(TestSample.class.getName());
 		@Test
 		public void pdfDemoTest() throws IOException {
 		String projectPath = System.getProperty("user.dir");
